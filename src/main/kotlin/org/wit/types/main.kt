@@ -6,7 +6,9 @@ package org.wit.types
     println("Hello World !")
     println("Working with Variables and Types")
 
-    //Task 2
+    println("________________________________________________________________________________\n")
+
+    //Task 2: Variables in Kotlin and their Types
 
     val doubleNumber = 1200.45
     val floatNumber = 700.78f
@@ -24,7 +26,9 @@ package org.wit.types
     println("byteNumber Value is: " + byteNumber + ", and the type is: " + byteNumber.javaClass)
 
 
-    //Task 3
+    println("________________________________________________________________________________\n")
+
+    //Task 3: underscores make number values more readable in code
 
     println("\nUsing underscores to make values more readable:")
     val oneMillion = 1_000_000
@@ -35,10 +39,10 @@ package org.wit.types
     println("\t" + threeThousand + " - the type is: " + threeThousand.javaClass)
     println("\t" + creditCardNumber + " - the type is: " + creditCardNumber.javaClass)
 
-}
-*/
+    println("________________________________________________________________________________\n")
 
-/* fun main(args: Array<String>){
+    //Explicit conversion of value
+
     val byteNum : Byte = 10
     val intNum : Int = byteNum.toInt()
     val floatNum : Float = byteNum.toFloat()
@@ -51,13 +55,18 @@ package org.wit.types
 
     println("________________________________________________________________________________\n")
 
-    val aChar = 'a'
+    // characters in kotlin
+
+  /*  val aChar = 'a'
     val bChar : Char = 'b'
 
     println("aChar: " + aChar + " - the type is: " + aChar.javaClass)
     println("bChar: " + bChar + " - the type is: " + bChar.javaClass)
 
+ */
     println("________________________________________________________________________________\n")
+
+    //booleans in kotlin
 
     val aFlag = true
     val bFlag : Boolean = false
@@ -65,9 +74,9 @@ package org.wit.types
     println("aFlag: " + aFlag + " - the type is: " + aFlag.javaClass)
     println("bFlag: " + bFlag + " - the type is: " + bFlag.javaClass)
 
-}*/
 
-fun main(args: Array<String>){
+    //mutable variables
+
     val aChar = 'a'
 
     println("aChar: " + aChar + " - the type is: " + aChar.javaClass)
@@ -85,5 +94,76 @@ fun main(args: Array<String>){
 
     println("number: " + number)
 
+    number = 3;
+
+    println("number: " + number)
+
+
+}*/
+
+fun main(args: Array<String>){
+
+    typeInference()
+    usingUnderscores()
+    booleansAndCharacters()
+}
+
+fun typeInference(){
+    println ("\n==========================================================")
+    println ("============  Using Type Inference in Kotlin =============")
+    println ("==========================================================")
+
+    val doubleNumber = 1200.45
+    val floatNumber = 700.78f
+    val longNumber = 98765432L
+    val intNumber = 123456
+    val shortNumber = 345
+    val byteNumber = 127
+
+    println("doubleNumber value is: " + doubleNumber + ", and the type is: " + doubleNumber.javaClass)
+    println("floatNumber value is:  " + floatNumber + ", and the type is: " + floatNumber.javaClass)
+    println("longNumber value is:   " + longNumber + ", and the type is: " + longNumber.javaClass)
+    println("intNumber value is:    " + intNumber + ", and the type is: " + intNumber.javaClass)
+    println("shortNumber value is:  " + shortNumber + ", and the type is: " + shortNumber.javaClass)
+    println("byteNumber value is:   " + byteNumber + ", and the type is: " + byteNumber.javaClass)
+}
+
+fun usingUnderscores(){
+    println ("\n==========================================================")
+    println ("=========  Using underscores in numeric values ===========")
+    println ("==========================================================")
+
+    //underscores make number values more readable in code
+
+    println("\nUsing underscores to make values more readable:")
+    val oneMillion = 1_000_000
+    val threeThousand = 3_000
+    val creditCardNumber = 1234_4321_5678_8765
+
+    println("\t" + oneMillion + " - the type is: " + oneMillion.javaClass)
+    println("\t" + threeThousand + " - the type is: " + threeThousand.javaClass)
+    println("\t" + creditCardNumber + " - the type is: " + creditCardNumber.javaClass)
+    println()
+}
+
+fun booleansAndCharacters(){
+    println ("\n==========================================================")
+    println ("================  Booleans and Characters ================")
+    println ("==========================================================")
+
+    //characters in kotlin
+    val aChar = 'a'            //type inference
+    val bChar: Char = 'b'   //explicitly defining the type
+    println("aChar: " + aChar + " - the type is: " + aChar.javaClass)
+    println("bChar: " + bChar + " - the type is: " + bChar.javaClass)
+
+
+    //booleans in kotlin
+    val aFlag = true
+    val bFlag: Boolean = false
+    println("aFlag: " + aFlag + " - the type is: " + aFlag.javaClass)
+    println("bFlag: " + bFlag + " - the type is: " + bFlag.javaClass)
+
+    println()
 
 }
