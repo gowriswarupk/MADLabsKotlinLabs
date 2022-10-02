@@ -38,7 +38,7 @@ package org.wit.types
 }
 */
 
-fun main(args: Array<String>){
+/* fun main(args: Array<String>){
     val byteNum : Byte = 10
     val intNum : Int = byteNum.toInt()
     val floatNum : Float = byteNum.toFloat()
@@ -64,5 +64,26 @@ fun main(args: Array<String>){
 
     println("aFlag: " + aFlag + " - the type is: " + aFlag.javaClass)
     println("bFlag: " + bFlag + " - the type is: " + bFlag.javaClass)
+
+}*/
+
+fun main(args: Array<String>){
+    val aChar = 'a'
+
+    println("aChar: " + aChar + " - the type is: " + aChar.javaClass)
+    val bChar : Char = 'b'
+
+    println("bChar: " + bChar + " - the type is: " + bChar.javaClass)
+
+    println("________________________________________________________________________________\n")
+
+    // mutable variable
+
+    var number = 5
+
+    number++
+
+    println("number: " + number)
+
 
 }
