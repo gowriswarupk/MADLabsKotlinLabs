@@ -1,6 +1,6 @@
 package org.wit.types
 
-fun main(args: Array<String>){
+/* fun main(args: Array<String>){
     //Task 1
 
     println("Hello World !")
@@ -34,5 +34,35 @@ fun main(args: Array<String>){
     println("\t" + oneMillion + " - the type is: " + oneMillion.javaClass)
     println("\t" + threeThousand + " - the type is: " + threeThousand.javaClass)
     println("\t" + creditCardNumber + " - the type is: " + creditCardNumber.javaClass)
+
+}
+*/
+
+fun main(args: Array<String>){
+    val byteNum : Byte = 10
+    val intNum : Int = byteNum.toInt()
+    val floatNum : Float = byteNum.toFloat()
+    val doubleNum : Double = byteNum.toDouble()
+
+    println("byteNum Value is: " + byteNum + ", and the type is: " + byteNum.javaClass)
+    println("intNum Value is: " + intNum + ", and the type is: " + intNum.javaClass)
+    println("floatNum Value is: " + floatNum + ", and the type is: " + floatNum.javaClass)
+    println("doubleNum Value is: " + doubleNum + ", and the type is: " + doubleNum.javaClass)
+
+    println("________________________________________________________________________________\n")
+
+    val aChar = 'a'
+    val bChar : Char = 'b'
+
+    println("aChar: " + aChar + " - the type is: " + aChar.javaClass)
+    println("bChar: " + bChar + " - the type is: " + bChar.javaClass)
+
+    println("________________________________________________________________________________\n")
+
+    val aFlag = true
+    val bFlag : Boolean = false
+
+    println("aFlag: " + aFlag + " - the type is: " + aFlag.javaClass)
+    println("bFlag: " + bFlag + " - the type is: " + bFlag.javaClass)
 
 }
